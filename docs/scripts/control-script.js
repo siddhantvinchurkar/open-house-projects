@@ -1,3 +1,5 @@
+/* Super global variables */
+var interval1 = null;
 
 /* Function definitions */
 function initializeUI() {
@@ -8,6 +10,13 @@ function initializeUI() {
 	/* Initialize materialize side navigation bar */
 	$('.sidenav').sidenav();
 
+	/* Initialize materialize carousel */
+	$('.carousel.carousel-slider').carousel({ fullWidth: true, indicators: true });
+	if (interval1) clearInterval(interval1);
+	interval1 = setInterval(function () { M.Carousel.getInstance(carousel1).next(); }, 5000);
+
+	/* Show carousel1 learn more button */
+	document.getElementById('button_featured_learn_more').style.display = '';
 }
 
 /* Wait for resources to load before executing script */
@@ -44,6 +53,6 @@ window.onload = function () {
 		/* Initialize UI elements */
 		initializeUI();
 
-	}, 3000);
+	}, 1000);
 
 }
