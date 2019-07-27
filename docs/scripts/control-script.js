@@ -1,6 +1,20 @@
 
+/* Function definitions */
+function initializeUI() {
+
+	/* Allow user input */
+	$('#fade-wrapper').fadeOut();
+
+	/* Initialize materialize side navigation bar */
+	$('.sidenav').sidenav();
+
+}
+
 /* Wait for resources to load before executing script */
 window.onload = function () {
+
+	/* Block user input till app loads */
+	$('#fade-wrapper').fadeIn();
 
 	var db = null;
 
@@ -26,6 +40,9 @@ window.onload = function () {
 
 		/* Set footer year */
 		document.getElementById('footer_year').innerHTML = new Date().getFullYear();
+
+		/* Initialize UI elements */
+		initializeUI();
 
 	}, 3000);
 

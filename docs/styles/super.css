@@ -5,7 +5,7 @@
 
 /* Basic Materialize Settings */
 html{
-	background-color: #F0F0F0;
+	background-color: #FCFCFC;
   }
   body{
 	font-family: 'Roboto', sans-serif;
@@ -32,3 +32,12 @@ html{
 	color: #FFFFFF;
 	background-color: #6666FF;
   }
+
+  /* Custom Settings */
+  #fade-wrapper {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.8);
+}

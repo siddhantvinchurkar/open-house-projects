@@ -30,19 +30,47 @@
 
   <body>
 
+    <div id="fade-wrapper">
+      <div class="row">
+        <div class="col s12 m12 l2 xl2 offset-l5 offset-xl5 white-text" style=" margin-top:10%; font-size:5em;">
+          <p><b>Loading...</b></p>
+        </div>
+      </div>
+    </div>
+
     <main>
+
       <!-- Fixed (top) Navigation Bar -->
       <div class="navbar-fixed">
         <nav class="z-depth-5">
           <div class="nav-wrapper">
-            <a class="brand-logo left valign-wrapper" style="font-size:3em;"><i class="material-icons"
-                style="font-size:1.5em;">home</i>Open House Projects</a>
+            <a class="brand-logo left valign-wrapper" style="font-size:3em;"><i data-target="sidenav"
+                class="material-icons sidenav-trigger" style="font-size:1.5em; cursor: pointer;">menu</i><b>Open House
+                Projects</b></a>
           </div>
         </nav>
       </div>
+
+      <!-- Sliding (side) Navigation Bar -->
+      <ul id="sidenav" class="sidenav">
+        <li>
+          <div class="user-view" style="min-height: 112px;">
+            <div class="background">
+              <img src="media/images/representations/about.png">
+            </div>
+          </div>
+        </li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      </ul>
     </main>
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer class="page-footer z-depth-5">
       <div class="footer-copyright">
         <div class="container">&copy;&emsp;<span id="footer_year">2019</span>&emsp;<a id="user_link"
             style="color:#FFFFFF;" href="https://siddhantvinchurkar.github.io/" target="_blank"
