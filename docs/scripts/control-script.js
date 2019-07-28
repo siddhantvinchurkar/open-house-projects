@@ -10,13 +10,48 @@ function initializeUI() {
 	/* Initialize materialize side navigation bar */
 	$('.sidenav').sidenav();
 
+	/* Initialize materialize parallax */
+	$('.parallax').parallax();
+
 	/* Initialize materialize carousel */
 	$('.carousel.carousel-slider').carousel({ fullWidth: true, indicators: true });
 	if (interval1) clearInterval(interval1);
 	interval1 = setInterval(function () { M.Carousel.getInstance(carousel1).next(); }, 5000);
 
+	/* Initialize jqueryui scroll animations */
+	$("#discover1").click(function () {
+		$('html, body').animate({
+			scrollTop: $("#section2-5").offset().top
+		}, 2000);
+	});
+	$("#discover2").click(function () {
+		$('html, body').animate({
+			scrollTop: $("#section3-5").offset().top
+		}, 2000);
+	});
+	$("#discover3").click(function () {
+		$('html, body').animate({
+			scrollTop: $("#section4-5").offset().top
+		}, 2000);
+	});
+
 	/* Show carousel1 learn more button */
 	document.getElementById('button_featured_learn_more').style.display = '';
+
+	/* Show section1 */
+	document.getElementById('section1').style.display = '';
+
+	/* Show section2 */
+	document.getElementById('section2').style.display = '';
+
+	/* Show section3 */
+	document.getElementById('section3').style.display = '';
+
+	/* Show section4 */
+	document.getElementById('section4').style.display = '';
+
+	/* Show section5 */
+	document.getElementById('section5').style.display = '';
 }
 
 /* Wait for resources to load before executing script */

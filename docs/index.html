@@ -69,7 +69,7 @@
         <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
       </ul>
 
-      <div class="row">
+      <div id="section1" class="row" style="display: none;">
         <div class="col s12 m12 l12 xl12" style="padding: 0px;">
           <div id="carousel1" class="carousel carousel-slider center" style="min-height: 600px;">
             <div class="carousel-fixed-item center">
@@ -108,6 +108,142 @@
             </div>
           </div>
         </div>
+      </div>
+      <div id="section2" class="row">
+        <div class="col s12 m12 l12 xl12" style="padding: 0px;">
+          <h1 class="center">Discover</h1>
+          <div class="arrow bounce">
+            <i id="discover1" class="material-icons" style="font-size: 5em; cursor: pointer;">arrow_downward</i>
+          </div>
+        </div>
+      </div>
+      <div id="section2-5" class="parallax-container" style="margin-top: -1%;">
+        <div class="parallax">
+          <img src="media/images/placeholders/background1.jpg">
+        </div>
+      </div>
+      <div id="section3" class="row" style="display: none; min-height: 25em;">
+        <h2 class="col s12 m12 l10 xl10 offset-l1 offset-xl1" style="margin-top: 2em;">Who are we?<br />
+          <hr />
+        </h2>
+        <div class="col s12 m12 l6 xl6" style="padding: 5em;">
+          <p style="font-size:1.5em;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="col s12 m12 l6 xl6" style="padding: 5em;">
+          <p style="font-size:1.5em;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <div class="arrow bounce">
+        <i id="discover2" class="material-icons" style="font-size: 5em; cursor: pointer;">arrow_downward</i>
+      </div>
+      <div id="section3-5" class="parallax-container" style="margin-top: -1%;">
+        <div class="parallax">
+          <img src="media/images/placeholders/background2.jpg">
+        </div>
+      </div>
+      <div id="section4" class="row" style="display: none; min-height: 25em;">
+        <h2 class="col s12 m12 l10 xl10 offset-l1 offset-xl1">Catchy Title<br />
+          <hr />
+        </h2>
+        <div class="col s12 m12 l4 xl4 offset-l1 offset-xl1">
+          <div class="card white">
+            <div class="card-content black-text" style="padding: 0px;">
+              <div class="card-image">
+                <img src="media/images/placeholders/house4-low-quality.jpg">
+                <span class="card-title">Alpine Orchards</span>
+              </div>
+              <p style="padding: 2em;">This is a good property.</p>
+            </div>
+            <div class="card-action">
+              <a href="#"><i class="material-icons right">book</i>Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m12 l4 xl4 offset-l2 offset-xl2">
+          <div class="card white">
+            <div class="card-content black-text" style="padding: 0px;">
+              <div class="card-image">
+                <img src="media/images/placeholders/house3-low-quality.jpg">
+                <span class="card-title">Supreme Orchards</span>
+              </div>
+              <p style="padding: 2em;">This is a better property.</p>
+            </div>
+            <div class="card-action">
+              <a href="#"><i class="material-icons right">book</i>Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow bounce">
+        <i id="discover3" class="material-icons" style="font-size: 5em; cursor: pointer;">arrow_downward</i>
+      </div>
+      <div id="section4-5" class="parallax-container" style="margin-top: -1%;">
+        <div class="parallax">
+          <img src="media/images/placeholders/background3.jpg">
+        </div>
+      </div>
+      <div id="section5" class="row" style="display: none; min-height: 25em;">
+        <h2 class="col s12 m12 l10 xl10 offset-l1 offset-xl1">Get in touch<br />
+          <hr />
+        </h2>
+        <div class="col s12 m12 l6 xl6" style="padding: 3em;">
+          <div class="col s12 m12 l12 xl12 input-field">
+            <input placeholder="Rahul" id="getIdentityFirstName" type="text" class="validate"
+              onkeypress="verifyGetIdentityFormDataIntegrity();" onchange="verifyGetIdentityFormDataIntegrity();"
+              onblur="verifyGetIdentityFormDataIntegrity();" required>
+            <label for="getIdentityFirstName">First Name</label>
+            <span class="helper-text" data-error="This is a required field" data-success="Perfect.">Can't really go
+              wrong
+              here, now can you?</span>
+          </div>
+          <div class="col s12 m12 l12 xl12 input-field">
+            <input placeholder="Agasthi" id="getIdentityLastName" type="text" class="validate"
+              onkeypress="verifyGetIdentityFormDataIntegrity();" onchange="verifyGetIdentityFormDataIntegrity();"
+              onblur="verifyGetIdentityFormDataIntegrity();">
+            <label for="getIdentityLastName">Last Name</label>
+            <span class="helper-text" data-error="This is a required field" data-success="Perfect.">You can skip this if
+              you're feeling lazy.</span>
+          </div>
+          <div class="col s12 m12 l12 xl12 input-field">
+            <input placeholder="Agasthi" id="getIdentityEmail" type="email" class="validate"
+              onkeypress="verifyGetIdentityFormDataIntegrity();" onchange="verifyGetIdentityFormDataIntegrity();"
+              onblur="verifyGetIdentityFormDataIntegrity();" required>
+            <label for="getIdentityEmail">Email</label>
+            <span class="helper-text" data-error="Please enter a valid email address" data-success="Perfect.">We will
+              use this to identify you.</span>
+          </div>
+          <div class="col s12 m12 l12 xl12" style="margin-top:2em;">
+            <a id="button_join_mail_list" class="waves-effect waves-light btn-large blue darken-4 white-text"><i
+                class="material-icons left">mail</i>Join
+              the mail list</a>
+          </div>
+        </div>
+        <div class="col s12 m12 l6 xl6" style="padding: 3em;">
+          <p class="left" style="font-size: 1.5em; margin-top:3em;">
+            Vidhana Soudha,<br />
+            Ambedkar Veedhi,<br />
+            Sampangi Rama Nagar,<br />
+            Bengaluru, Karnataka 560 001<br /><br />
+            Phone Number: +91 9900608821
+          </p>
+        </div>
+      </div>
+      <div class="col s12 m12 l6 xl6 offset-l3 offset-xl3">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.878281210309!2d77.58849781529804!3d12.979636118212596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae166dd8fee8b7%3A0xa3112775dc579453!2sVidhana+Soudha%2C+Ambedkar+Veedhi%2C+Sampangi+Rama+Nagar%2C+Bengaluru%2C+Karnataka+560001!5e0!3m2!1sen!2sin!4v1564310838525!5m2!1sen!2sin"
+          width="100%" height="600px" frameborder="0" style="border:0;" allowfullscreen></iframe>
       </div>
 
     </main>

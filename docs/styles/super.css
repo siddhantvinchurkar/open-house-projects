@@ -2,6 +2,7 @@
 @import url('roboto.css');
 @import url('materialize.min.css');
 @import url('material-icons.css');
+@import url('bouncy-arrow.css');
 
 /* Basic Materialize Settings */
 html{
